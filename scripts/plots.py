@@ -2,6 +2,17 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 def plot_boxplot(df:pd.DataFrame, cols:list[str]):
+    """
+    Generates and displays box plots for specified numeric columns in a DataFrame.
+    Box plots are useful for visualizing the distribution of numerical data and
+    identifying potential outliers.
+
+    Args:
+        df (pd.DataFrame): The input DataFrame containing the data.
+        cols (list[str]): A list of column names for which to generate box plots.
+                          If the list is empty, box plots will be generated for all
+                          numeric columns in the DataFrame.
+    """
     if len(cols) == 0:
         cols = df.columns
     for col in cols:
@@ -12,6 +23,18 @@ def plot_boxplot(df:pd.DataFrame, cols:list[str]):
             plt.show()
 
 def plot_histogram(df:pd.DataFrame,cols:list[str]):
+    """
+    Generates and displays histograms for numeric columns and count plots for
+    non-numeric (categorical) columns in a DataFrame. Histograms show the
+    distribution of numeric data, while count plots show the frequency of
+    categories.
+
+    Args:
+        df (pd.DataFrame): The input DataFrame containing the data.
+        cols (list[str]): A list of column names for which to generate plots.
+                          If the list is empty, plots will be generated for all
+                          columns in the DataFrame.
+    """
     i = 0
     if len(cols) == 0:
         cols = df.columns

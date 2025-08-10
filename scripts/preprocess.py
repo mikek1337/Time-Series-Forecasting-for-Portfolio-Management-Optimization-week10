@@ -3,11 +3,6 @@ import pandas as pd
 import csv
 DATA_FOLDER = 'data'
 
-def load(filename):
-    try:
-        return pd.read_csv(f'{DATA_FOLDER}/{filename}', delimiter='|')
-    except Exception:
-        print(f'{DATA_FOLDER}/{filename}')
 
 def save_csv(data:pd.DataFrame, output_filepath:str, delimiter:str):
     """
