@@ -28,7 +28,7 @@ The `model.ipynb` notebook covers the following aspects:
 - **Train models**: Trains ARIMA and LTSM model based on historical data
 - **Optimize parameters**: using grid search to optimize parameters
 
-
+ 
 ## Notebook Contents (portfolio.ipynb)
 
 - **Creating Portfoilo**: based on the model creating a portfolio
