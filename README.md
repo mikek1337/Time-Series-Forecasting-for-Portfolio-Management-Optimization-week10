@@ -16,7 +16,8 @@ The project is organized into the following directories:
     
     - `eda.ipynb`: The primary notebook for Exploratory Data Analysis.
         
-    - `model.ipynb`: (Future) Notebook for developing forecasting models.
+    - `model.ipynb`:  Notebook for developing forecasting models.
+    - `portfolio.ipynb`: manage and backtest portifolio stategies 
         
 - **`scripts/`**: Contains Python helper scripts.
     
@@ -88,3 +89,22 @@ Ensure you have Python 3.x installed on your system.
     ```
     
     Once Jupyter Lab/Notebook opens in your browser, click on `eda.ipynb` to open and run the notebook cells sequentially.
+
+7. **Run the model Notebook**: Navigate to the `notebooks/` directory and launch Jupyter Lab or Jupyter Notebook:
+    
+    ```
+    cd notebooks/
+    jupyter lab  # or jupyter notebook
+    ```
+    
+    Once Jupyter Lab/Notebook opens in your browser, click on `model.ipynb` to open and run the notebook cells sequentially.
+
+
+8. **Run the portfolio Notebook**: Navigate to the `notebooks/` directory and launch Jupyter Lab or Jupyter Notebook:
+    
+    ```
+    cd notebooks/
+    jupyter lab  # or jupyter notebook
+    ```
+    
+    Once Jupyter Lab/Notebook opens in your browser, click on `portfolio.ipynb` to open and run the notebook cells sequentially.
